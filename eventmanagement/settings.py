@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-f)!9yt_)-w_)yptj2&q@2iq&f08tw)&rmku)942g-1okhvm4=n
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [*]
 
 
 
@@ -76,16 +76,9 @@ WSGI_APPLICATION = 'eventmanagement.wsgi.application'
 
 
 import os
-DATABASES = {
-        "default": {
-        "ENGINE": "django.db.backends.postgresql",
-        "NAME": os.getenv("DB_NAME", "eventdb"),
-        "USER": os.getenv("DB_USER", "postgres"),
-        "PASSWORD": os.getenv("DB_PASSWORD", "postgres"),
-        "HOST": os.getenv("DB_HOST", "localhost"),
-        "PORT": os.getenv("DB_PORT", "5432"),
-        }
-    }
+
+
+DATABASE_URL=postgresql://eventmanagement_32jm_user:tIgJklqpP6ikpXHN4eYXbHBhRDwtn5L4@dpg-d2pais6r433s73d2dnk0-a.singapore-postgres.render.com/eventmanagement_32jm
 
 CORS_ALLOW_ALL_ORIGINS = True
 CORS_ALLOWED_ORIGINS = [
