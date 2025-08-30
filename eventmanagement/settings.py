@@ -78,7 +78,8 @@ WSGI_APPLICATION = 'eventmanagement.wsgi.application'
 import os
 
 
-DATABASE_URL=postgresql://eventmanagement_32jm_user:tIgJklqpP6ikpXHN4eYXbHBhRDwtn5L4@dpg-d2pais6r433s73d2dnk0-a.singapore-postgres.render.com/eventmanagement_32jm
+DATABASE_URL="postgresql://eventmanagement_32jm_user:tIgJklqpP6ikpXHN4eYXbHBhRDwtn5L4@dpg-d2pais6r433s73d2dnk0-a.internal/eventmanagement_32jm"
+
 
 CORS_ALLOW_ALL_ORIGINS = True
 CORS_ALLOWED_ORIGINS = [
